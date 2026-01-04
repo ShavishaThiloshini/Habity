@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Habity 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <div class="app">
+        <h1>Habity 🌸</h1>
+        <p class="subtitle">Grow your habits, one day at a time</p>
+        <div class="toast" id="toast"></div>
+
+        <!-- Add Habit -->
+        <form class="habit-form">
+            <input type="text" placeholder="New habit (e.g. Drink water 💧)" required>
+            <button type="submit">Add Habit</button>
+        </form>
+
+        <!-- Habit List -->
+        <div class="habit-list">
+            <!-- Habit cards will appear here -->
+        </div>
+
+        <section class="progress">
+            <h3>Weekly Progress 🌸</h3>
+
+            <div class="progress-percent">
+                <span id="progressValue">0%</span> completed
+            </div>
+
+            <div class="week">
+                <div class="day" data-day="0"><span>Mon</span><div class="bar"></div></div>
+                <div class="day" data-day="1"><span>Tue</span><div class="bar"></div></div>
+                <div class="day" data-day="2"><span>Wed</span><div class="bar"></div></div>
+                <div class="day" data-day="3"><span>Thu</span><div class="bar"></div></div>
+                <div class="day" data-day="4"><span>Fri</span><div class="bar"></div></div>
+                <div class="day" data-day="5"><span>Sat</span><div class="bar"></div></div>
+                <div class="day" data-day="6"><span>Sun</span><div class="bar"></div></div>
+            </div>
+        </section>
+        <section class="calendar">
+            <h3>Streak Calendar 📅</h3>
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </section>
+        <div class="controls">
+            <button id="resetWeek">🔄 Reset Week</button>
+            <button id="exportData">📤 Export Progress</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
